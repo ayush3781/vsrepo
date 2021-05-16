@@ -1,0 +1,356 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* navbar  section */
+#logo img{
+    height: 94px;
+    margin: 19px 16px;
+
+}
+
+
+
+#navbar{
+    margin: -15px;
+    position: sticky;
+    top:0 ;
+    display: flex;
+    align-items: center;
+}
+#navbar::before{
+    content: "";
+    
+    background-image: url('navbar.jpg');
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+ 
+}
+#navbar ul{font-family: 'Ubuntu Mono', monospace;
+    display: flex;
+    align-items: center;
+   margin-top: 10px;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 20px;
+}
+/* intro section */
+#intro{
+
+    font-family: 'Ubuntu Mono', monospace;
+    display: flex;
+    color: white;
+    font-size: 15px;
+}
+#intro p img {height: 450px;
+    padding-right: 10px;
+}
+#p1{padding-left: 100px;
+    height: 200px;
+    /* border: solid black 1px; */
+    padding-right: 500px;
+    width: 400px;
+    padding-top: 10px;
+    margin: 14px;
+    transition: all;
+    transition-duration: 0.8s;
+   
+}
+#p1:hover{
+font-size: 20px;
+background-color: rgb(54, 55, 58);
+height: 400px;
+}
+
+#intro::before{
+    content: "";
+    background-image: url('nav1.jpg');
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.85;
+}
+/* specialities section */
+#menu{
+    font-size: 10px;
+    margin: 1px;
+    display: flex;
+}
+#menu .box{ 
+    border: 2px solid brown;
+    padding: 10px;
+    margin: 2px 4px;
+    border-radius: 30px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+    transition:all ;
+    transition-duration: 0.8s;
+
+}
+#menu .box:hover{
+    font-size: 30px;
+    /* background-color: yellowgreen; */
+
+    padding: 2px;
+    z-index: +1000;
+}
+
+#menu .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+#menu .box p{
+    font-family: 'Ubuntu Mono', monospace;
+
+} 
+h2{
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.center{
+    text-align: center;
+}
+#Specialities{
+    margin-top: 51px
+}
+h4{
+    font-family: 'Ubuntu Mono', monospace;
+    padding-top: 10px;
+     text-align: right;
+}
+/* add button */
+.bt{
+    padding-left: 20px;
+    font-size: 25px;
+    background-color: rgb(247, 240, 240);
+    border-radius: 20px;
+}
+.bt:hover{
+    background-color: rgb(31, 195, 236);
+    color :black;
+}
+.bt:focus{
+    background-color: green;
+    color: white;
+}
+/* recomendation section */
+.search{
+    height: 10px;
+}
+#menu{
+    font-size: 10px;
+    margin: 1px;
+    display: flex;
+}
+#menu1 .box1{ 
+    border: 2px solid brown;
+    padding: 10px;
+    margin: 2px 4px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+    transition:all ;
+    transition-duration: 0.8s;
+
+}
+#menu1 .box1:hover{
+    font-size: 30px;
+    /* background-color: yellowgreen; */
+
+    padding: 2px;
+    z-index: +1000;
+}
+
+#menu1 .box1 img{ 
+   height:220px;
+   margin: auto;
+   display: block;
+}
+
+#menu1 .box1 p{
+    font-family: 'Ubuntu Mono', monospace;
+
+} 
+#Specialities::before{
+
+    content: "";
+    
+    background-image: url('navbar.jpg');
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.75;
+ 
+}
+#recommend::before{
+
+    content: "";
+    
+    background-image: url('navbar.jpg');
+    position: absolute;
+    height: 500%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.75;
+ 
+}
+/* h2{
+    border:1px  solid black;
+    border-radius: 500px;
+    
+} */
+/* review section */
+#review{
+    margin-top: 151px
+}
+#rating img{
+    height: 10px;
+}
+#rev{
+    font-size: 10px;
+    margin: 1px;
+    display: flex;
+}
+#rev .box{ 
+    border: 2px solid brown;
+    padding:36px;
+    margin: 2px 4px;
+    border-radius: 30px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+    transition:all ;
+    transition-duration: 0.6s;
+
+}
+#rev .box:hover{
+    font-size: 30px;
+    /* background-color: yellowgreen; */
+
+    padding: 2px;
+    z-index: +1000;
+}
+
+#rev .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+#rev .box #rating img{height: 50px;
+
+}
+#rev .box p{
+    font-family: 'Ubuntu Mono', monospace;
+} 
+/*Forms Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    background-color: cornsilk;
+    
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Ubuntu Mono', monospace;
+
+}
+
+#contactus{
+    position: relative;
+}
+#contactus #us{
+    padding-right: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+#contactus #us #home{
+   
+    /* border:3px solid rgb(10, 10, 10);
+    border-radius: 20px; */
+        color: rgb(12, 11, 11);
+        display: block;
+        height: 60px;
+        margin-top: 28px;
+
+       
+        text-decoration: none;
+    
+}
+#contactus #us #home:hover{
+    color: white;
+    background-color: black;
+}
+
+
+#contactus::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background-image: url('footer.jpg');
+
+}
+#contactus #us {
+    font-family: 'Ubuntu Mono', monospace;
+    display: flex;
+    flex-direction: row;
+}
+#contactus #us img {
+   height: 100px;
+   padding: 14px 65px
+}
+h3{
+    font-family: 'Ubuntu Mono', monospace;
+}
